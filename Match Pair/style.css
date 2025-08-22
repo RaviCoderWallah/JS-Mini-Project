@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 1rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 30%;
+
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    background: #768ce5;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100px;
+    aspect-ratio: 1;
+}
+
+
+
+.card p{
+    visibility: hidden;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.card.active{
+    background: white;
+}
+
+.card.active p{
+    visibility: visible;
+    font-size: 3rem;
+ }

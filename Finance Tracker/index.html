@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finace Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Balance : <span class="amount"></span></h1>
+        <h2>Add Transaction</h2>
+        <form>
+            <div>
+                <label for="description">Description</label>
+                <input type="text" placeholder="Enter description" id="description" required>
+            </div>
+            <div>
+                <label for="amount">Amount</label>
+                <input type="number" placeholder="Enter amount" id="amount" required> 
+            </div>
+            <div>
+                <select id="transaction-type">
+                    <option value="Income">Income</option>
+                    <option value="Expense">Expense</option>
+                </select>
+            </div>
+            <div>
+                <div>
+                    <button type="submit" id="add-transaction">Add Transaction</button>
+                </div>
+            </div>
+        </form>
+    
+        <h2>Transaction</h2>
+        <div class="result-container">
+
+        </div>
+    </div>
+
+</body>
+</html>

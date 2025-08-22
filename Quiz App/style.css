@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: lightblue;
+}
+
+.container{
+  background: white;
+  box-shadow: 0 0 4px grey;
+  width: 60rem;
+  padding: 2rem;
+
+  border-radius: 7px;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-block: 1rem;
+}
+
+.option{
+    background-color: rgb(233, 233, 233);
+    padding: 1rem;
+    border-radius: 7px;
+
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.option.disabled{
+    cursor: no-drop;
+}
+
+.option.correct{
+    outline: 2px solid green;
+    background: rgb(194, 252, 194);
+    color: green;
+}
+
+.option.wrong{
+    outline: 2px solid red;
+    background: rgb(252, 194, 194);
+    color: red;
+}
+
+button{
+    padding: .5rem 1rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    float: right;
+    margin-top: 2rem;
+}
+
+h2{
+    height: 5.5rem;
+}
+.reset-btn{
+    float: left;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App - Ravi Verma(RaviCoderWallah)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="home-page-container">
+        <section class="home-page">
+            <div class="container max-width-90">
+                <div class="heading">
+                    <h1>Welcome to the
+                        <span class="gradient-text"> Frontend Quiz!</span>
+                    </h1>
+                    <p class="para italic">Pick a subject to get started.</p>
+                </div>
+                <div class="quiz-select">
+                    <div class="html-box quiz-select-box" id="1">
+                        <div class="image html-box-image">
+                            <img src="assets/images/icon-html.svg" alt="html icon">
+                        </div>
+                        <h2>HTML</h2>
+                    </div>
+                    <div class="css-box quiz-select-box" id="2">
+                        <div class="image css-box-image">
+                            <img src="assets/images/icon-css.svg" alt="css icon">
+                        </div>
+                        <h2>CSS</h2>
+                    </div>
+                    <div class="js-box quiz-select-box" id="3">
+                        <div class="image js-box-image">
+                            <img src="assets/images/icon-js.svg" alt="js icon">
+                        </div>
+                        <h2>JavaScript</h2>
+                    </div>
+                    <div class="accessibility-box quiz-select-box" id="4">
+                        <div class="image accessibility-box-image">
+                            <img src="assets/images/icon-accessibility.svg" alt="html icon">
+                        </div>
+                        <h2>Accessibility</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="quiz-page p-2 hidden">
+        <div class="flex" id="quiz-page-header">
+            <div class="flex">
+                <div class="image html-box-image">
+                    <img src="/images/icon-html.svg" alt="html icon" id="current-page-image">
+                </div>
+                <h2 id="current-page-title"></h2>
+            </div>
+
+            <button id="go-back">Go Back</button>
+        </div>
+        <div class="container">
+            <div class="quiz-details">
+                <p class="para">Question &nbsp; <span id="current-question-index">1</span> &nbsp; of 10</p>
+                <h2 class="question">What does HTML stand for?</h2>
+            </div>
+            <div class="quiz-options">
+                <div class="quiz-option">
+                    <div>
+                        <div class="option-box">
+                            <h3>A</h3>
+                        </div>
+                        <h3 id="quiz-option-1">Hyper Trainer Marking Language</h3>
+                    </div>
+                </div>
+                <div class="quiz-option">
+                    <div>
+                        <div class="option-box">
+                            <h3>B</h3>
+                        </div>
+                        <h3 id="quiz-option-2">Hyper Text Marketing Language</h3>
+                    </div>
+                </div>
+                <div class="quiz-option">
+                    <div>
+                        <div class="option-box">
+                            <h3>C</h3>
+                        </div>
+                        <h3 id="quiz-option-3">Hyper Text Markup Language</h3>
+                    </div>
+                </div>
+                <div class="quiz-option">
+                    <div>
+                        <div class="option-box">
+                            <h3>D</h3>
+                        </div>
+                        <h3 id="quiz-option-4">Hyper Text Markup Leveler</h3>
+                    </div>
+                </div>
+                <div class="submit-container">
+                    <h3>Next Question</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Over Modal -->
+    <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+            <h2>Game Over!!</h2>
+            <p id="resultText"></p>
+            <button id="close-model">Close</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

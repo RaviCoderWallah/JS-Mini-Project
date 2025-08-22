@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 20rem;
+    gap: 2rem;
+}
+
+.grid > * {
+    background: rgb(227, 227, 227);
+    border: 2px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    width: 5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.grid-card.active{
+    background: green;
+    color: white;
+}
+
+
+input{
+    width: 10rem;
+    font-size: 1rem;
+    height: 2rem;
+    padding-inline-start: .5rem;
+}
+
+button{
+    font-size: 1rem;
+    padding: .3rem 1rem;
+}

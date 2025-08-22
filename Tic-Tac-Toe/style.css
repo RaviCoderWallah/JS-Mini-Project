@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 1rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 5rem;
+    aspect-ratio: 1;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-size: 2rem;
+}
+
+button{
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
